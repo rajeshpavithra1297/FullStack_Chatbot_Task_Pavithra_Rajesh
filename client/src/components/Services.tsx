@@ -22,6 +22,7 @@ const services = [
 function Services() {
   return (
     <section id="services" className="bg-slate-900 px-6 py-24 text-white">
+      {/* heading div */}
       <div className="mx-auto max-w-7xl">
 
         <div className="mx-auto max-w-2xl text-center">
@@ -39,8 +40,10 @@ function Services() {
           </p>
         </div>
 
+          {/* Divided the screen to three colums */}
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {services.map((service) => (
+            // each div has icon title and description
             <div
               key={service.title}
               className="rounded-2xl border border-white/10 bg-slate-950 p-8 transition hover:-translate-y-1 hover:border-cyan-400/40"

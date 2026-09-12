@@ -51,33 +51,6 @@ import Enquiry from "../models/Enquiry.js";
   }
 };
 
-export const getEnquiryById = async (req, res) => {
-  try {
-    const enquiry = await Enquiry.findById(req.params.id);
-
-    if (!enquiry) {
-      return res.status(404).json({
-        success: false,
-        message: "Enquiry not found",
-      });
-    }
-
-    res.status(200).json({
-      success: true,
-      enquiry,
-    });
-  } catch (error) {
-    console.error(
-      "Error fetching enquiry:",
-      error.message
-    );
-
-    res.status(500).json({
-      success: false,
-      message: "Failed to fetch enquiry",
-    });
-  }
-};
 
 export const updateEnquiryStatus = async (req, res) => {
   try {

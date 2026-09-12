@@ -9,9 +9,6 @@ router.post("/", createEnquiry);
 // GET ALL
 router.get("/", getEnquiries);
 
-// GET BY ID
-router.get("/:id", getEnquiryById);
-
 // UPDATE
 router.put("/:id", updateEnquiryStatus);
 

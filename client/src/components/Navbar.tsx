@@ -1,7 +1,7 @@
 function Navbar() {
   return (
     <nav className="fixed top-0 z-50 w-full border-b border-white/10 bg-slate-950/95 text-white backdrop-blur">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <div className="mx-auto flex  max-w-7xl items-center justify-between px-6 py-4">
 
         <a href="#home" className="text-2xl font-bold tracking-wide">
           Drone<span className="text-cyan-400">TV</span>

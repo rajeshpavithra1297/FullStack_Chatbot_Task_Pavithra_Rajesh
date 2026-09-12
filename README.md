@@ -6,6 +6,8 @@ A full-stack chatbot and enquiry management application developed using React, T
 
 This project demonstrates a complete full-stack application where the frontend communicates with a REST API backend, and the backend manages enquiry data stored in MongoDB.
 
+The frontend uses Tailwind CSS to create a clean, responsive, and user-friendly interface. Users can interact with the chatbot and submit enquiries as either a Student or Customer.
+
 Users can interact with the chatbot and submit an enquiry. The submitted information is sent to the backend through REST APIs and stored in MongoDB using Mongoose.
 
 The admin dashboard allows an administrator to view enquiries, search enquiries by Student or Customer, filter enquiries, update their status, and delete enquiries.
@@ -122,4 +124,16 @@ Create Enquiry: POST /api/enquiries
 Get All Enquiries: GET /api/enquiries
 Update Enquiry Status: PUT /api/enquiries/:id
 Delete Enquiry: DELETE /api/enquiries/:id
+
+# Run Instructions
+
+Navigate to client folder in terminal, run npm install
+Start the frontend server using npm run dev 
+server runs in http://localhost:
+
+Navigate to server folder in terminal, create .env file and add the connection string from mongodb,
+Install npm dependencies, 
+Start the backend server: npm start
+
+# GitHub Repository- https://github.com/rajeshpavithra1297/FullStack_Chatbot_Task_Pavithra_Rajesh.git
 

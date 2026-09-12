@@ -49,23 +49,7 @@ export const getEnquiries = async () => {
   return data.enquiries;
 };
 
-export const getEnquiryById = async (
-  id: string
-) => {
-  const response = await fetch(
-    `http://localhost:5000/api/enquiries/${id}`
-  );
 
-  const data = await response.json();
-
-  if (!response.ok) {
-    throw new Error(
-      data.message || "Failed to fetch enquiry"
-    );
-  }
-
-  return data.enquiry;
-};
 
 export const updateEnquiryStatus = async (
   id: string,

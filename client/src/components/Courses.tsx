@@ -23,7 +23,7 @@ function Courses() {
   return (
     <section id="courses" className="bg-slate-950 px-6 py-24 text-white">
       <div className="mx-auto max-w-7xl">
-
+        {/* heading */}
         <div className="text-center">
           <p className="font-semibold uppercase tracking-widest text-cyan-400">
             Learn with us
@@ -34,6 +34,7 @@ function Courses() {
           </h2>
         </div>
 
+        {/* Three colums for each training */}
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {courses.map((course) => (
             <div
